@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="countdown">
+            <h1 id="heading">COUNTDOWN TIMER</h1>
+            <div class="inp">
+                <input type="text" id="hours" name="hours" value="00" min="0">
+                
+                <input type="text" id="minutes" name="minutes" value="00" min="0" max="59">
+                
+                <input type="text" id="seconds" name="seconds" value="00" min="0" max="59">
+                
+
+            </div>
+            <did class="lable">
+                <label for="hours">HH</label>
+                <label for="minutes">MM</label>
+                <label for="seconds">SS</label>
+            </did>
+            <div class="btn">
+                <button id="start" onclick="start()"> Start</button>
+                <button id="stop" onclick="stop()">Stop</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <audio id="sound" src="mp3/sound.mp3"></audio>
+</body>
+</html>
